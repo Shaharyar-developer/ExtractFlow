@@ -4,12 +4,6 @@ import { AppRouter } from "../../electron/trpc";
 import { toast } from "sonner";
 export const trpcReact = createTRPCReact<AppRouter>();
 
-const init = () => {
-  const { data } = trpcReact.getOllamaUrl.useQuery();
-  if (data) {
-    return data;
-  }
-};
 
 let llm: Ollama | null | undefined = null;
 

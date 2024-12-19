@@ -1,27 +1,8 @@
 import z from "zod";
 import { initTRPC } from "@trpc/server";
-import { observable } from "@trpc/server/observable";
-import { EventEmitter } from "events";
 import superjson from "superjson";
 import Store from "electron-store";
 
-const ee = new EventEmitter();
-const storeSchema = {
-  keyPoints: {
-    type: "array",
-    items: {
-      type: "object",
-      properties: {
-        title: { type: "string" },
-        points: {
-          type: "array",
-          items: { type: "string" },
-        },
-      },
-      required: ["title", "points"],
-    },
-  },
-};
 const store = new Store({
   // schema: storeSchema,
 });

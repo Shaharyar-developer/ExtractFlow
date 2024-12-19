@@ -20,13 +20,11 @@ import {
   DrawerFooter,
 } from "@nextui-org/drawer";
 import { Popover, PopoverTrigger, PopoverContent } from "@nextui-org/popover";
-import { Listbox, ListboxSection, ListboxItem } from "@nextui-org/listbox";
 import {
   Settings,
   Save,
   FileOutput,
   ChevronDown,
-  PenLine,
   Trash2,
   Eraser,
 } from "lucide-react";

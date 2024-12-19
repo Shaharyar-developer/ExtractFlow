@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { ipcLink } from "electron-trpc/renderer";
 import superjson from "superjson";
-import { createTRPCReact } from "@trpc/react-query";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import type { AppRouter } from "../electron/trpc";
 import Page from "./home/page";
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "./providers/theme.tsx";
